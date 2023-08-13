@@ -1,9 +1,25 @@
+const CalCont = document.querySelector(".calContainer");
 const inputBar = document.getElementById("input");
 const outputBar = document.getElementById("output");
 const btnNum = document.querySelectorAll(".vbtn");
 const action = document.querySelector(".action");
 const clear = document.querySelector(".clear");
-const del = document.querySelector(".del")
+const del = document.querySelector(".del");
+
+const sunMoon = document.querySelector(".icon-toggle");
+
+sunMoon.src = './img/moon.png';
+
+sunMoon.addEventListener("click", () => {
+    CalCont.classList.toggle('dark-theme');
+     
+    if(CalCont.classList.contains('dark-theme')) {
+        sunMoon.src = './img/sun.png';
+    }else {
+        sunMoon.src = './img/moon.png';
+    }
+});
+
 
 
 function appendChar(char) {
