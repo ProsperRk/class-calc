@@ -24,17 +24,19 @@ button {
 
 .calContainer {
     width: 280px;
+    position: relative;
     flex-direction: column;
-    background-color: #a3a3a3;
-    padding: 10px 10px 20px 10px;
+    padding: 10px;
     border-radius: 10px;
+
+    background-color: #fffae0;
+    transition:all .4s ease-in-out;
 }
 
 .screens {
     flex-direction: column;
     background-color: transparent;
     margin-bottom: 12px;
-    border: 2px solid #575757;
     border-radius: 4px;
 }
 
@@ -64,6 +66,18 @@ button {
     height: 116px;
 }
 
+.btn:hover {
+    background: #cecece;
+}
+
+.btn.oper:hover{
+    background: rgb(255, 231, 122);
+} 
+.btn.oper {
+    background: var(--primary-color-btn);
+    color: rgb(168, 137, 0);
+}
+
 #input {
     font-size: 1.75rem;
 }
@@ -72,3 +86,4 @@ button {
     font-weight: 600;
     font-size: 2rem;
 }
+
